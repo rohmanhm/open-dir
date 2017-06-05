@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import os = require('os')
 import path = require('path')
 import program = require('commander')
@@ -14,7 +16,7 @@ const folder = customFolder
   ? path.resolve(process.cwd(), customFolder)
   : process.cwd()
 
-function execCMD (command: string) {
+function execCMD (command: string): void {
   execa.shell(command)
 }
 
@@ -38,5 +40,3 @@ switch (os.platform()) {
     console.error(`${ os.platform() } unsupported yet.`)
     break
 }
-
-export default program

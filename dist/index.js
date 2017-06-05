@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var os = require("os");
@@ -31,5 +32,4 @@ switch (os.platform()) {
         console.error(os.platform() + " unsupported yet.");
         break;
 }
-exports.default = program;
 //# sourceMappingURL=index.js.map

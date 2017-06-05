@@ -1,7 +1,7 @@
 {
   "name": "open-dir",
   "description": "Simple Cross platform open GUI folder from terminal",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "bin": "./dist/index.js",
   "license": "MIT",
   "author": {
